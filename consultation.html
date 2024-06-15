@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Consultation Form</title>
+    <link rel="stylesheet" href="Consultation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h2>HandsomeMinds</h2>
+            <p><span>⏲</span> 20 min</p>
+            <p><span>💻</span> Web Conferencing</p>
+            <p><span>📍</span> Pakistan, Punjab</p><br>
+            <p>To share your idea with us to get some good understanding about the project then fill the form and give the information correctly so that we can study your idea. <br><br>And then we set the metting so that it can be helpful for you. Metting may be on zoom or by directly throung whatsapp.<br><br> The other information will be send to to your email. So keep checking your email. if you don't receive the email then check the spam folder too. If this will helpful for you then you can buy the cup of tea. Thanks!!  </p>
+        </div>
+        <div class="right-section">
+            <h1>Schedule Your Free Consultation</h1>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="add">Additional Info</label>
+                <input type="text" id="add" name="add" placeholder="Add additional info here">
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="confirm" name="confirm">
+                    <label for="confirm">I confirm that I am not a student</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="iconfirm" name="iconfirm">
+                    <label for="iconfirm" required>I confirm</label>
+                </div>
+
+                <label for="linkedin">LinkedIn URL</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https/:www.linkedin.com/in/abc">
+
+                <fieldset>
+                    <legend>What domain is your project related to?</legend>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="webdev" name="domain" value="webdev">
+                        <label for="webdev">Web Development</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="mobile" name="domain" value="mobile">
+                        <label for="mobile">Mobile</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="video" name="domain" value="video">
+                        <label for="video">Video Editing</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="wordpress" name="domain" value="wordpress">
+                        <label for="wordpress">WordPress</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="other" name="domain" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
+
+                <label for="details">Please share your details</label>
+                <textarea id="details" name="details" required></textarea>
+
+                <fieldset>
+                    <legend>What is the timeline of your project?</legend>
+                    <div class="radio-group">
+                        <input type="radio" id="1-3months" name="timeline" value="1-3months">
+                        <label for="1-3months">1-3 Months</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="3-6months" name="timeline" value="3-6months">
+                        <label for="3-6months">3-6 Months</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="6months" name="timeline" value="6months">
+                        <label for="6months">6+ Months</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Schedule Event</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

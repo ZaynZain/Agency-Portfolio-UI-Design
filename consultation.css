@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.left-section h2 {
+    font-family: 'Seymour One', sans-serif;
+    margin-bottom: 20px;
+    color: #66FF00;
+    font-size: 24px;
+}
+
+.left-section p {
+    font-family:Merienda, sans-serif ;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: gray;
+    font-size: 16px;
+
+}
+
+.right-section {
+    flex: 2;
+    padding: 20px;
+}
+
+.right-section h1 {
+    font-family: 'Seymour One', sans-serif;
+    color: #66FF00;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.checkbox-group,
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-group input,
+.radio-group input {
+    margin-right: 10px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 0 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #121212;
+    font-weight: bold;
+    border : 1px solid #66FF00;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #66FF00;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .right-section {
+        padding-top: 0;
+    }
+
+    .left-section, .right-section {
+        padding: 15px;
+    }
+}
